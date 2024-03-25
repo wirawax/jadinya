@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+/* Tambahkan gaya untuk header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content div {
+    margin-right: 20px; /* Jarak antara teks dan gambar */
+}
+
+.header-content img{
+    width: 80px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: auto;
+    border-radius: 50%; /* Untuk membuat gambar bundar */
+    margin-left: 20px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.home{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 8rem;
+    
+}
+
+.home h3{
+    font-size: 1.5rem;
+}
+
+.home h1{
+    font-size:5rem;
+}
+
+.home h1 span{
+    color:#000;
+}
+
+.home p{
+    font-size:1.25rem;
+    color:#000;
+    padding: 0rem;
+}
+
+.home img{
+    max-width: 60%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home ul{
+    padding-left:2rem;
+}
+
+.home ul li{
+    font-size:1.25rem;
+    color:#000;
+    padding: 0rem
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-active li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
